@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <!-- comienza header -->
+    <header>
+        <img src="img/logo_UCEMA.png" alt="logo UCEMA">
+        <h1>Registro para el Club de Emprendedores de UCEMA</h1>
+    </header>
+    <!-- finaliza header -->
+
+    <!-- comienza main -->
+    <main>
+        <section>
+            <h2>Completá el siguiente formulario de registro</h2>
+            <div>
+                <form action="mailto:budettachiara@gmail.com">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <div> <!-- nombre y apellido -->
+                            <label for="fullname">Nombre completo</label>
+                            <input type="text" name="fullname" id="fullname" required> 
+                        </div>
+                        <div> <!-- mail -->
+                            <label for="email">Correo electrónico de UCEMA</label>
+                            <input type="email" name="email" id="email" required> 
+                        </div>
+                        <div> <!-- fecha nacimiento -->
+                            <label for="birth">Fecha de nacimiento</label>
+                            <input type="date" name="birth" id="birth" required> 
+                        </div>
+                        <div> <!-- carrera -->
+                            <label for="career">Carrera o especialidad</label>
+                            <input type="text" name="career" id="career" required> 
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sobre tu emprendimiento/interés</legend>
+                        <div> <!-- emprendimiento -->
+                            <p>¿Tienes un emprendimiento en marcha?</p>
+                            <label for="entrepreneurship">Si</label>
+                            <input type="radio" name="entrepreneurship" id="entrepreneurship" required> 
+                            <label for="entrepreneurship">No</label>
+                            <input type="radio" name="entrepreneurship" id="entrepreneurship" required>
+                        </div>
+                        <div> 
+                            <label for="entrepreneurship_name">Nombre del emprendimiento</label>
+                            <input type="text" name="entrepreneurship_name" id="entrepreneurship_name"> 
+                        </div>
+                        <div> 
+                            <label for="entrepreneurship_descr">Descripción breve del emprendimiento o área de interés:</label><br>
+                            <textarea name="entrepreneurship_descr" id="entrepreneurship_descr" cols="40" rows="8" maxlength="300"></textarea> 
+                        </div>
+                        <div>
+                            <label for="launch">Fecha de lanzamiento o evento importante relacionado con el emprendimiento</label>
+                            <input type="datetime-local" name="launch" id="launch">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Participación en el Club</legend>
+                        <div>
+                            <p>¿Te gustaría dar una charla o taller?</p>
+                            <label for="wkshop">Si</label>
+                            <input type="radio" name="wkshop" id="wkshop"> 
+                            <label for="wkshop">No</label>
+                            <input type="radio" name="wkshop" id="wkshop">
+                        </div>
+                        <div>
+                            <p>Temas de interés</p>
+                            <input type="checkbox" name="fin" id="fin">
+                            <label for="fin">Financiación</label>
+                            <input type="checkbox" name="mkt" id="mkt">
+                            <label for="mkt">Marketing Digital</label>
+                            <input type="checkbox" name="business_str" id="business_str">
+                            <label for="business_str">Estrategia de Negocios</label>
+                            <input type="checkbox" name="tech" id="tech">
+                            <label for="tech">Tecnología</label>
+                            <input type="checkbox" name="other" id="other">
+                            <label for="other">Otros</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Disponibilidad</legend>
+                        <div>
+                            <p>Días de la semana que prefieres para las reuniones</p>
+                            <input type="checkbox" name="mon" id="mon">
+                            <label for="mon">Lunes</label>
+                            <input type="checkbox" name="tue" id="tue">
+                            <label for="tue">Martes</label>
+                            <input type="checkbox" name="wed" id="wed">
+                            <label for="wed">Miercoles</label>
+                            <input type="checkbox" name="thur" id="thur">
+                            <label for="thur">Jueves</label>
+                            <input type="checkbox" name="fri" id="fri">
+                            <label for="fri">Viernes</label>
+                            <input type="checkbox" name="sat" id="sat">
+                            <label for="sat">Sabado</label>
+                            <input type="checkbox" name="sun" id="sun">
+                            <label for="sun">Domingo</label>
+                        </div>
+                        <div>
+                            <p>Horario preferido</p>
+                            <label for="mor">Mañana</label>
+                            <input type="radio" name="mor" id="mor"> 
+                            <label for="eve">Tarde</label>
+                            <input type="radio" name="eve" id="eve">
+                            <label for="night">Noche</label>
+                            <input type="radio" name="night" id="night">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <div>
+                            <label for="coment">Espacio para comentarios o sugerencias adicionales</label><br>
+                            <textarea name="coment" id="coment" cols="40" rows="9" maxlength="350"></textarea>
+                        </div>
+                        <div>
+                            <p>¿Cómo te enteraste del club?</p>
+                            <label for="f&f">amigos/familia</label>
+                            <input type="radio" name="f&f" id="f&f"> 
+                            <label for="social media">redes sociales</label>
+                            <input type="radio" name="social media" id="social media">
+                            <label for="broch">folletos</label>
+                            <input type="radio" name="broch" id="broch">
+                            <label for="email">correo de UCEMA</label>
+                            <input type="radio" name="email" id="email"> 
+                            <label for="oth">otros</label>
+                            <input type="radio" name="oth" id="oth">
+                        </div>
+                    </fieldset>
+                    <div> 
+                        <label for="file">Mandanos tu emprendimeinto</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <!-- finaliza main -->
+
+    <!-- comeinza footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li>2023</li>
+                <li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- finaliza footer -->
+</body>
+</html>

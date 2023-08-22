@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://statics.eleconomista.com.ar/2020/03/614e2f5f8c618.png" alt="logo mercado libre" height="100px">
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Destacados</a></li>
+                <li><a href="#">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Trabajá con nosotros</h1>
+                <h2>¡Gracias por el interés en nuestra empresa!</h2>
+                <p>Completá el siguiente formulario de postulación</p>
+            </div>
+
+            <!-- comienza form -->
+            <div>
+                <form action="mailto:budettachiara@gmail.com"> <!-- no hay que ponerle el mail pero como no vimos js lo ponemos por ahora -->
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        <div> <!-- nombre y apellido -->
+                            <label for="fullname">Nombre y apellido</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Juan Pérez" required> 
+                        </div>
+                        <div> <!-- mail -->
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required> 
+                        </div>
+                        <div> <!-- dni -->
+                            <label for="dni">DNI/Pasaporte</label>
+                            <input type="text" name="dni" id="dni">
+                        </div>
+                        <div> <!-- opciones de puestos -->
+                            <label for="position">Puesto de interés</label>
+                            <select name="position" id="position">
+                                <option value="analista">Analista</option> <!-- value es por si la pagina esta en otro idioma y cuendo me llega la info no entiendo asiq me llega tal y como está en el value -->
+                                <option value="finanzas">Jefe de finanzas</option>
+                                <option value="rep">Repartidor</option>
+                                <option value="rrhh">Director de RRHH</option>
+                                <option value="" selected>Seleccione una opción</option>
+                            </select>
+                        </div>
+                        <div> <!-- cv -->
+                            <label for="cv">Mandanos tu CV</label>
+                            <input type="file" name="cv" id="cv">
+                        </div>
+                        <div> <!-- edad -->
+                            <label for="age">Edad</label>
+                            <input type="number" name="age" id="age" min="18" max="65" step="0.5"> <!-- el step es para que con el cursor los numeros incrementen de a 0.5 por ejemplo -->
+                        </div>
+                        <div> <!-- checkbox de idiomas -->
+                            <p>Idiomas</p>
+
+                            <input type="checkbox" name="language" id="language-esp" value="spanish">
+                            <label for="language-esp">Español</label>
+
+                            <input type="checkbox" name="language" id="language-en" value="english">
+                            <label for="language-en">Inglés</label>
+
+                            <input type="checkbox" name="language" id="language-fr" value="french">
+                            <label for="language-fr">Francés</label>
+
+                            <input type="checkbox" name="language" id="language-al" value="german">
+                            <label for="language-al">Alemán</label>
+                        </div>
+                        <div> <!-- telefono -->
+                            <label for="telephone">Teléfono</label>
+                            <input type="tel" name="telephone" id="telephone" maxlength="12">
+                        </div>
+                        <div> <!-- linkedin -->
+                            <label for="linkedin">LinkedIn</label>
+                            <input type="text" name="linkedin" id="linkedin">
+                        </div>
+                        <div>
+                            <label for="cover-letter">Carta de presentación</label>
+                            <textarea name="cover-letter" id="cover-letter" cols="30" rows="10" maxlength="300" placeholder="contanos por qué queres trabajar con nosotros"></textarea>
+                        </div>
+                    
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferencias de trabajo</legend>
+                        <div>
+                            <p>Disponibilidad horaria</p>
+                            <input type="radio" name="working-preferences" id="morning">
+                            <label for="morning">Mañana</label>
+
+                            <input type="radio" name="working-preferences" id="evening">
+                            <label for="evening">Tarde</label>
+                        </div>
+                        <div>
+                            <p>Forma de trabajo</p>
+                            <input type="radio" name="working-place" id="virtual">
+                            <label for="virtual">Virtual</label>
+
+                            <input type="radio" name="working-place" id="face-to-face">
+                            <label for="face-to-face">Presencial</label>
+                        </div>
+                        <div>
+                            <label for="start-date">Comienzo</label>
+                            <input type="datetime-local" name="start-date" id="start-date">
+                        </div>                        
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <!-- finaliza form -->
+
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
