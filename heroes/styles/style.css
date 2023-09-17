@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.message-header {
+    background-color: rgba(12, 12, 51, 0.646);
+    padding: 2%;
+}
+
+.main-header, .footer-container, .btn {
+    background-color: rgba(0, 0, 198, 0.613);
+}
+
+.main-header {
+    padding: 4% 2%;
+}
+
+.card {
+    width: 20.8vw;
+}
+
+.header-card {
+    background-image: url("../images/fondo_batman.png");
+    height: 18vh;
+}
+
+.second-header-card {
+    background-image: url("../images/fondo_harley.png");
+    height: 18vh;
+}
+
+.conteiner-card {
+    padding: 10%;
+}
+
+.card-title {
+    margin: 5%;
+    text-align: center;
+}
+
