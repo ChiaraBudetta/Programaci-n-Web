@@ -7,6 +7,14 @@
     overflow-x: hidden;
 }
 
+/* BOTON HAMBURGUESA */
+.menu-btn {
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+/* NAV */
 nav {
     display: flex;
     background-color: #01ADEE;
@@ -49,10 +57,14 @@ nav {
     padding: 2vh 3vw 0 0;
     display: flex;
     justify-content: right;
+    overflow: hidden;
 }
     .buscador input {
         border: 0.5px solid #01ADEE;
         background-color: #01afee27;
+        border-radius: 10px;
+        padding: 0.5vh 0.5vw;
+        margin-left: 0.5vw;
     }
 
 /* OFERTAS INDEX */
@@ -83,6 +95,9 @@ nav {
                 cursor: pointer;
             }
         .ofertas_destacadas div p{
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
             font-size: 1.2em;
             line-height: 1em;
             margin: 1vh 2.5vw;
@@ -156,12 +171,12 @@ nav {
 }
 .sv h2 {
     display: flex;
-    font-size: 1.8em;
-    font-weight: 500;
-    border-bottom: 1px dotted red;
+    font-weight: 300;
     justify-content: center;
+    font-size: 1.8em;
+    margin: 9vh 5vw 3vh 5vw;
+    border-bottom: 1px dotted red;
     color: white;
-    margin: 9vh 40vw 3vh 40vw;
 }
 .video-sv {
     display: flex;
@@ -174,11 +189,13 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
 }
-    .primer-fila_colecciones img, .segunda-fila_colecciones img, .tercera-fila_colecciones img {
+    .primer-fila_colecciones img, .primer-fila_colecciones video, .segunda-fila_colecciones img, .tercera-fila_colecciones img{
         width: 20vw;
         margin: 3vh 2vw 2vh 2vw;
         border-radius: 20px;
+        justify-content: center;
     }
+
     .sv img:hover {
         scale: 1.1;
         cursor:pointer;
@@ -186,9 +203,11 @@ nav {
 
     .primer-fila_colecciones p, .segunda-fila_colecciones p, .tercera-fila_colecciones p {
         display: flex;
+        justify-content: center;
+        overflow: hidden;
         font-size: 1.2em;
-        margin: 1vh 0;
-        justify-content:space-evenly;
+        line-height: 1em;
+        margin: 1vh 2.5vw;
     }
 
 
@@ -198,10 +217,10 @@ nav {
 }
 .productos h2 {
     display: flex;
-    font-size: 1.8em;
     font-weight: 300;
     justify-content: center;
-    margin: 9vh 40vw 3vh 40vw;
+    font-size: 1.8em;
+    margin: 9vh 5vw 3vh 5vw;
 }
 
 .primer-fila_productos, .segunda-fila_productos, .tercera-fila_productos {
@@ -214,16 +233,18 @@ nav {
         margin: 3vh 2vw 2vh 2vw;
         border-radius: 20px;
     }
-    .sv img:hover {
+    .primer-fila_productos img:hover, .segunda-fila_productos img:hover, .tercera-fila_productos img:hover {
         scale: 1.1;
         cursor:pointer;
     }
 
     .primer-fila_productos p, .segunda-fila_productos p, .tercera-fila_productos p {
         display: flex;
+        justify-content: space-evenly;
+        overflow: hidden;
         font-size: 1.2em;
-        margin: 1vh 0;
-        justify-content:space-evenly;
+        line-height: 1em;
+        margin: 1vh 2.5vw;
     }
 
 
@@ -270,6 +291,50 @@ nav {
             cursor: pointer;
         }
 
+
+/* MI CUENTA */
+.form-mi_cuenta {
+    background-color: #01afee27;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 65vh; 
+    
+}
+.form {
+    width: 40%;
+    text-align: center; 
+    padding: 20px;
+}
+
+    .form-mi_cuenta .tag-mi_cuenta {
+        margin: 4vh 0;
+        text-align: start;
+    }
+    .form-mi_cuenta input{
+        width: 95%; 
+        height: 2rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #01afee27;
+        border: none;
+        }
+
+    .form-mi_cuenta button {
+        padding: 0.8rem 1.8rem;
+        background-color: #01ADEE;
+        border: none;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+        .form-mi_cuenta button:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+
+
 /* FOOTER */
 hr {
     border: 0.1px solid #01ADEE ;
@@ -293,3 +358,135 @@ footer {
         footer ul label {
             font-weight: 500;
         }
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+    /* NAV */
+    .menu-btn {
+        display: flex;
+        justify-content: right;
+        margin: 3vh 4vw 0 0;
+    }
+
+    .nav, .nav-colecciones {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 55%;
+        height: 100%;
+        opacity: 0.9;
+        padding: 5vh 2vw;
+        line-height: 2.5;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .nav.show {
+        transform: translateX(-20px);
+    }
+    .nav-colecciones.show{
+        transform: translateX(-20px);
+    }
+
+
+
+    /* INDEX */
+    .logo-index {
+        justify-content: center;
+        align-items: center;
+    }
+        .logo-index a img{
+            width: 25vw;
+            padding: 2vh 0;
+        }
+    .ofertas_index {
+        width: 100vw;
+        background-image: url(../images/fondo_cookies-mobile.png);
+    }
+    .titulo-ofertas_destacadas, .nuevos-ingresos h2, .productos h2, .sv h2{
+        font-size: 1.5em;
+    }
+    .ofertas_destacadas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ofertas_destacadas div{
+        margin: 4vh;
+    }
+    .ofertas_destacadas div img{
+        width: 45vw;
+        margin: 2vh 0;
+        border-radius: 20px;
+    }
+
+    .ofertas_destacadas div p{
+        overflow: hidden;
+        margin: 1vh 2.5vw;
+    }
+    .nuevos-ingresos img {
+        width: 50vw;
+    }
+    .buscador{
+        display: none;
+    }
+
+
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+    }
+
+
+
+    /* PRODUCTOS */
+    .primer-fila_productos, .segunda-fila_productos, .tercera-fila_productos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .primer-fila_productos img, .segunda-fila_productos img, .tercera-fila_productos img{
+        width: 45vw;
+        margin: 2vh 0;
+    }
+
+    .primer-fila_productos p, .segunda-fila_productos p, .tercera-fila_productos p {
+        overflow: hidden;
+        margin: 1vh 2.5vw;
+    }
+
+
+    /* COLECCIONES */
+    .primer-fila_colecciones, .segunda-fila_colecciones, .tercera-fila_colecciones{
+        flex-direction: column;
+        align-items: center;
+    }
+    .primer-fila_colecciones img, .primer-fila_colecciones video, .segunda-fila_colecciones img, .tercera-fila_colecciones img{
+        display: flex;
+        width: 45vw;
+        margin: 2vh 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .primer-fila_colecciones p, .segunda-fila_colecciones p, .tercera-fila_colecciones p{
+        display: flex;
+        justify-content: center;
+        margin: 1vh 2.5vw;
+    }
+
+
+    /* CONTACTO */
+    .form{
+        width: 80%;
+        height: 90%;
+    }
+        
+
+     /* MI CUENTA */
+
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>TCF | contacto</title>
+    <title>TCF | mi cuenta</title>
     <link rel="shortcut icon" href="images/logo-cookies.pdf.png" type="image/x-icon">
 </head>
 <body>
@@ -29,35 +29,26 @@
             <ul>
                 <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="colecciones.html">COLECCIONES</a></li>
-                <li><a href="contacto.html"><strong>CONTACTO</strong></a></li>
-                <li><a href="mi_cuenta.html">MI CUENTA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="mi_cuenta.html"><strong>MI CUENTA</strong></a></li>
             </ul>
         </nav>
     </header>
     <!-- comienza form -->
     <main>
-        <section class="form-contacto">
+        <section class="form-mi_cuenta">
             <form action="mailto:tcf@gmail.com" class="form">
-                <div class="tag-contacto">
-                    <label for="nombre">NOMBRE</label> <br>
-                    <input type="text" name="nombre" id="nombre" required> <br>
+                <div class="tag-mi_cuenta">
+                    <label for="username">NOMBRE DE USUARIO</label> <br>
+                    <input type="text" name="username" id="username" required> <br>
                 </div>
                 
-                <div class="tag-contacto">
-                    <label for="mail">CORREO ELECTRÓNICO</label> <br>
-                    <input type="email" name="mail" id="mail" required> <br> 
+                <div class="tag-mi_cuenta">
+                    <label for="password">CONTRASEÑA</label> <br>
+                    <input type="password" name="password" id="password" required> <br> 
                 </div>
-
-                <div class="tag-contacto">
-                    <label for="telefono">TELÉFONO</label> <br>
-                    <input type="tel" name="telefono" id="telefono"> <br>
-                </div>
-                
-                <div class="tag-contacto">
-                    <label for="mensaje">DEJANOS TU MENSAJE!</label> <br>
-                    <textarea name="msj" id="mensaje" cols="30" rows="5" required maxlength="200"></textarea>
-                </div>
-                <button>ENVIAR</button>
+                <button>INICIAR SESIÓN</button>
+                <button>REGISTRARSE</button>
             </form>
         </section>
     </main>
