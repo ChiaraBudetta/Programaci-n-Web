@@ -11,11 +11,12 @@
 
 <body>
     <header>
-        <!-- logo -->
+        <!-- buscador -->
         <div class="buscador">
-            <label for="buscador"><img src="images/search.svg" alt="search"></label>
-            <input type="search" name="buscador" id="buscador">
-        </div>
+            <form action="mailto:tcf@gmail.com">
+                <label for="buscador"><img src="images/search.svg" alt="search"></label>
+                <input type="search" name="buscador" id="buscador">
+            </form>
         <!-- boton de menu -->
         <div class="menu-btn">
             <svg xmlns="http://www.w3.org/2000/svg" height="1em"
@@ -44,7 +45,7 @@
     <main>
         <section class="sv">
             <h2>SAN VALENTIN</h2>
-            <div class="primer-fila_colecciones">
+            <div class="cookies-colecciones">
                 <div>
                     <video class="video-sv" src="images/video_valentines.mp4" autoplay loop muted></video>
                 </div>
@@ -58,9 +59,6 @@
                     <p>Caja con 12 cookies</p>
                     <p>$3.500</p>
                 </div>
-            </div>
-
-            <div class="segunda-fila_colecciones">
                 <div>
                     <img src="images/choco_blanco-sv.jpg" alt="cookie choco blanco">
                     <p>Cookie Bañada</p>
@@ -76,15 +74,14 @@
                     <p>Cookie con Ganache</p>
                     <p>$300 x unidad</p>
                 </div>
-            </div>
-
-            <div class="tercera-fila_colecciones">
                 <div>
                     <img src="images/oreo-sv.jpg" alt="cookie oreo dorada">
                     <p>Cookie Oreo Dorada</p>
                     <p>$300 x unidad</p>
                 </div>
             </div>
+
+
         </section>
 
     </main>
@@ -92,28 +89,44 @@
     <!-- footer -->
     <hr>
     <footer>
-        <ul>
-            <label>Seguinos en nuestras redes!</label>
-            <li><a href="https://www.instagram.com/thecookiefactory.ar/">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/es/">TikTok</a></li>
-            <li><a href="https://www.youtube.com">YouTube</a></li>
-        </ul>
+        <div>
+            <div>
+                <h4>¡Seguinos en nuestras redes!</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/thecookiefactory.ar/">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/es/">TikTok</a></li>
+                    <li><a href="https://www.youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <ul>
-            <label>Contactanos:</label>
-            <li><a href="tel:+">Teléfono</a></li>
-            <li><a href="mailto:tcf@gmail.com">Correo electrónico</a></li>
-        </ul>
+        <div>
+            <div>
+                <h4>Contactanos:</h4>
+                <ul>
+                    <li><a href="tel:+">Teléfono</a></li>
+                    <li><a href="mailto:tcf@gmail.com">Correo electrónico</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <ul>
-            <label>Encontranos:</label>
-            <li><a href="https://goo.gl/maps/oyFg4Y7q7vJQ1bda9">San Miguel, Buenos Aires, Argentina</a></li>
-        </ul>
+        <div>
+            <div>
+                <h4>Encontranos:</h4>
+                <ul>
+                    <li><a href="https://goo.gl/maps/oyFg4Y7q7vJQ1bda9">San Miguel, Buenos Aires, Argentina</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <ul>
-            <li>Copyright © 2023 The Cookie Factory</li>
-            <li><a href="#">Términos y condiciones</a></li>
-        </ul>
+        <div>
+            <div>
+                <ul>
+                    <li class="legales">Copyright © 2023 The Cookie Factory</li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="scripts/main.js"></script>
 </body>
